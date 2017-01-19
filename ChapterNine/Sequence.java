@@ -36,6 +36,14 @@ public class Sequence {
                 sequence[count - 1] = custom;
             }
         }
+
+        Sequence outer() {
+            return Sequence.this;
+        }
+    }
+
+    public String toString() {
+        return "this is a sequence";
     }
 
     public static void main(String[] args) {
@@ -48,5 +56,8 @@ public class Sequence {
         while ((custom = sequenceSelector.next()) != null) {
             System.out.println(custom);
         }
+
+        System.out.println(sequenceSelector.outer());
+        System.out.println("the length of the sequence is: " + sequence.count);
     }
 }
