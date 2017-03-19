@@ -11,10 +11,8 @@ interface CanFly {
 }
 
 class Toy {
-    Toy() {
-    }
-
-    Toy(int i) {
+    public Toy(int i) {
+        System.out.println("Toy(int)");
     }
 }
 
