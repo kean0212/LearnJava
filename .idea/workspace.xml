@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e3b312-7f39-4168-808d-1a64d753cb6f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java" afterPath="$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,8 +87,8 @@
       <file leaf-file-name="SimpleDynamicProxy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="818">
-              <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+            <state relative-caret-position="286">
+              <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
               <folding>
                 <element signature="e#618#619#0" expanded="true" />
                 <element signature="e#656#657#0" expanded="true" />
@@ -736,12 +736,12 @@
       <workItem from="1487628030720" duration="21000" />
       <workItem from="1487628087372" duration="29568000" />
       <workItem from="1489941373610" duration="14000" />
-      <workItem from="1489941437171" duration="6635000" />
+      <workItem from="1489941437171" duration="6975000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95061000" />
+    <option name="totallyTimeSpent" value="95401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
@@ -1168,8 +1168,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="818">
-          <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+        <state relative-caret-position="286">
+          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding>
             <element signature="e#618#619#0" expanded="true" />
             <element signature="e#656#657#0" expanded="true" />
