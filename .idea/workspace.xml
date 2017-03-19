@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="16e3b312-7f39-4168-808d-1a64d753cb6f" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TypeInformation/SimpleProxyDemo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -86,26 +84,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleDynamicProxy.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SimpleDynamicProxy.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="818">
+              <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
               <folding>
-                <element signature="e#162#163#0" expanded="true" />
-                <element signature="e#200#201#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#618#619#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleProxyDemo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimpleProxyDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TypeInformation/SimpleProxyDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="893">
-              <caret line="49" column="106" lean-forward="false" selection-start-line="49" selection-start-column="106" selection-end-line="49" selection-end-column="106" />
+            <state relative-caret-position="855">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
                 <element signature="e#571#572#0" expanded="true" />
                 <element signature="e#609#610#0" expanded="true" />
@@ -230,8 +226,8 @@
         <option value="$PROJECT_DIR$/TypeInformation/NonPublicShowMethods.java" />
         <option value="$PROJECT_DIR$/TypeInformation/Exercise19.java" />
         <option value="$PROJECT_DIR$/TypeInformation/Exercise2.java" />
-        <option value="$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java" />
         <option value="$PROJECT_DIR$/TypeInformation/SimpleProxyDemo.java" />
+        <option value="$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java" />
       </list>
     </option>
   </component>
@@ -740,12 +736,12 @@
       <workItem from="1487628030720" duration="21000" />
       <workItem from="1487628087372" duration="29568000" />
       <workItem from="1489941373610" duration="14000" />
-      <workItem from="1489941437171" duration="6010000" />
+      <workItem from="1489941437171" duration="6635000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94436000" />
+    <option name="totallyTimeSpent" value="95061000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
@@ -1159,26 +1155,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java">
+    <entry file="file://$PROJECT_DIR$/TypeInformation/SimpleProxyDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="855">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TypeInformation/SimpleProxyDemo.java">
+    <entry file="file://$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="49" column="106" lean-forward="false" selection-start-line="49" selection-start-column="106" selection-end-line="49" selection-end-column="106" />
+        <state relative-caret-position="818">
+          <caret line="58" column="7" lean-forward="false" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
           <folding>
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
           </folding>
         </state>
       </provider>
