@@ -2,7 +2,186 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e3b312-7f39-4168-808d-1a64d753cb6f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HoldingYourObjects/Sequence.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Abstract.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/ActionCharacter.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Adventure.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Apply.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Base.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Bicycle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/BicycleFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/CanClimb.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/CanFight.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/CanFly.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/CanSwim.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Child.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Coin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/CoinFace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/CoinFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Concrete.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Cycle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/CycleFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Cycles.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Dad.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Description.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/DiamondProblem.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Dice.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/DiceFace.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/DiceFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/ExerciseFour.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/ExerciseFourteen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/ExerciseOne.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/ExerciseSeventeen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/ExerciseSixteen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/ExerciseThree.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/ExerciseTwo$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/ExerciseTwo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/First.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Fourth.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Gerbil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Hamster.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Hero.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Instrument.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Interface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Mouse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Music5.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Note.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Percussion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Playable.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Processor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/RandomChars.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Real.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Rodent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Second.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/SecondChild.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/SecondDad.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Shared.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/SwappingProcessor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Third.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Tool.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/ToolFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/TossingGames.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Tricycle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/TricycleFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Unicycle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/UnicycleFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/Wind.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/exercisefive/ExerciseFive.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/exercisefive/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterEight/exercisefive/onepackage/Interface.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFive/ExerciseSix.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFive/exercisefive/ClassOne.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFive/exercisefive/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFive/exercisefour/ClassOne.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFive/exercisefour/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFive/exercisefour/classtwo/ClassTwo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFive/exerciseone/ExerciseOne.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFive/exerciseone/test/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFive/exercisethree/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFive/exercisethree/debug/Debug.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFive/exercisethree/debugoff/Debug.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/Book.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/Color.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/CommandLineArguments.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/Cup.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/Cups.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/DefaultConstructor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/Dog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/DogOverload.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/Enumeration$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/Enumeration.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/Finalize.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/InstanceInitializer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/Mug.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/Mugs.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/OverloadThis.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/ReferenceInitialization.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/ReferenceInitializationII.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/StaticInitializer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/StaticString.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/StringArray.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/StringArrayArgument.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/StringArrayReferences.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/SynthesizedConstructor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/Test.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterFour/This.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterOne/Arguments.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterOne/Autoboxing.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterOne/Class.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterOne/DefaultInitialization.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterOne/HelloWorld.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterOne/StaticField.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Abandon.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/AlertStatus.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Base.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Bicycle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Brass.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Bread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Cheese.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Child.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/CovariantReturn.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Cycle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Description.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/ExerciseNine.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/ExerciseOne.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/ExerciseSixToEight.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/ExerciseTen.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/ExerciseTwoToFour.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Gerbil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Glyph.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Grain.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Hamster.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Instrument.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/InstrumentGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Lettuce.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Lunch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Malfunction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Meal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Mill.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Mouse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Normal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Note.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Pickle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/PolyConstructors.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/PortableLunch.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/RectangularGlyph.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Rodent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/RoundGlyph.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Sandwich.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Shared.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Starship.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Stringed.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Unicycle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Wheat.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/WheatMill.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Wind.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/Woodwind.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/exerciseTwoToFour/Circle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/exerciseTwoToFour/Rectangle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/exerciseTwoToFour/Shape.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSeven/exerciseTwoToFour/ShapeGenerator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSix/exercisetwo/Cleanser.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterSix/exercisetwo/Detergent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterThree/CompareToSecond.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterThree/Fibonacci.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterThree/PrimeNumberBruteForce.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterThree/PrintOneToOneHundred.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterThree/SwitchStatement.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterThree/VampireNumber.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/Aliasing.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/AliasingMethodCalls.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/BitwiseOperator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/CharToBinary.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/Class.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/Coin.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/CompareTwoStrings.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/Dog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/ExponentialNotation.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/HexAndOctal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/Number.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/SignedLeftShift.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/SignedRightShift.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChapterTwo/Velocity.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,20 +211,9 @@
       <file leaf-file-name="Sequence.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HoldingYourObjects/Sequence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
-              <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-              <folding>
-                <element signature="e#205#206#0" expanded="true" />
-                <element signature="e#243#244#0" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#319#320#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="399">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,6 +310,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="4" />
     <option name="y" value="23" />
     <option name="width" value="1436" />
     <option name="height" value="877" />
@@ -162,8 +331,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -206,7 +375,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -234,6 +403,18 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ChapterEight" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -642,16 +823,17 @@
       <workItem from="1487628087372" duration="29568000" />
       <workItem from="1489941373610" duration="14000" />
       <workItem from="1489941437171" duration="13415000" />
-      <workItem from="1490241928663" duration="1403000" />
+      <workItem from="1490241928663" duration="1492000" />
+      <workItem from="1490243589944" duration="19000" />
+      <workItem from="1490243624010" duration="201000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103244000" />
+    <option name="totallyTimeSpent" value="103553000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1436" height="877" extended-state="6" />
-    <editor active="true" />
+    <frame x="4" y="23" width="1436" height="877" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -661,21 +843,21 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920793" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09052925" sideWeight="0.489426" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17966574" sideWeight="0.489426" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24739583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12135417" sideWeight="0.51057404" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12135417" sideWeight="0.51057404" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -967,7 +1149,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,7 +1170,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -997,12 +1177,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding>
-            <element signature="e#103#104#0" expanded="true" />
-            <element signature="e#151#152#0" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,7 +1184,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1018,9 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,7 +1198,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,7 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,7 +1212,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1052,7 +1219,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1060,26 +1226,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HoldingYourObjects/Sequence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="47" column="30" lean-forward="false" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-          <folding>
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-            <element signature="e#569#570#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="399">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
