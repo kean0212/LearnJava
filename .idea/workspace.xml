@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e3b312-7f39-4168-808d-1a64d753cb6f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HoldingYourObjects/RemoveSublist.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HoldingYourObjects/GerbilIterator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -60,7 +60,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RemoveSublist.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RemoveSublist.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HoldingYourObjects/RemoveSublist.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
@@ -73,6 +73,33 @@
                 <element signature="e#231#232#0" expanded="true" />
                 <element signature="e#265#266#0" expanded="true" />
                 <element signature="e#388#394#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GerbilHopping.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HoldingYourObjects/GerbilHopping.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding>
+                <element signature="e#176#177#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GerbilIterator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HoldingYourObjects/GerbilIterator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#203#204#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ErrorHandlingWithExceptions/OnOffSwitch.java" />
         <option value="$PROJECT_DIR$/ErrorHandlingWithExceptions/ExerciseFifteen.java" />
         <option value="$PROJECT_DIR$/ErrorHandlingWithExceptions/LostMessage.java" />
         <option value="$PROJECT_DIR$/ErrorHandlingWithExceptions/ExerciseNineteen.java" />
@@ -168,6 +194,7 @@
         <option value="$PROJECT_DIR$/forfun.js" />
         <option value="$PROJECT_DIR$/HoldingYourObjects/ListFeatures.java" />
         <option value="$PROJECT_DIR$/HoldingYourObjects/RemoveSublist.java" />
+        <option value="$PROJECT_DIR$/HoldingYourObjects/GerbilIterator.java" />
       </list>
     </option>
   </component>
@@ -697,12 +724,12 @@
       <workItem from="1490243589944" duration="19000" />
       <workItem from="1490243624010" duration="1801000" />
       <workItem from="1490565814218" duration="572000" />
-      <workItem from="1490669893475" duration="3234000" />
+      <workItem from="1490669893475" duration="3470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108959000" />
+    <option name="totallyTimeSpent" value="109195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
@@ -758,13 +785,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ErrorHandlingWithExceptions/Exercise23.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="36" column="56" lean-forward="false" selection-start-line="36" selection-start-column="56" selection-end-line="36" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ErrorHandlingWithExceptions/Exercise25.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1067,13 +1087,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HoldingYourObjects/GerbilHopping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HoldingYourObjects/Sequence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1125,6 +1138,29 @@
             <element signature="e#231#232#0" expanded="true" />
             <element signature="e#265#266#0" expanded="true" />
             <element signature="e#388#394#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HoldingYourObjects/GerbilHopping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HoldingYourObjects/GerbilIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
           </folding>
         </state>
       </provider>
