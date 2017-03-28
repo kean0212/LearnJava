@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e3b312-7f39-4168-808d-1a64d753cb6f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HoldingYourObjects/ListFeatures.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HoldingYourObjects/RemoveSublist.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,12 +50,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DHTML.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DHTML.js" pinned="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="261">
               <caret line="995" column="0" lean-forward="false" selection-start-line="995" selection-start-column="0" selection-end-line="995" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoveSublist.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HoldingYourObjects/RemoveSublist.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+              <folding>
+                <element signature="e#79#80#0" expanded="true" />
+                <element signature="e#115#116#0" expanded="true" />
+                <element signature="e#155#156#0" expanded="true" />
+                <element signature="e#199#200#0" expanded="true" />
+                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+                <element signature="e#388#394#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ErrorHandlingWithExceptions/ExerciseFourteen.java" />
         <option value="$PROJECT_DIR$/ErrorHandlingWithExceptions/OnOffSwitch.java" />
         <option value="$PROJECT_DIR$/ErrorHandlingWithExceptions/ExerciseFifteen.java" />
         <option value="$PROJECT_DIR$/ErrorHandlingWithExceptions/LostMessage.java" />
@@ -150,6 +167,7 @@
         <option value="$PROJECT_DIR$/HoldingYourObjects/Sequence.java" />
         <option value="$PROJECT_DIR$/forfun.js" />
         <option value="$PROJECT_DIR$/HoldingYourObjects/ListFeatures.java" />
+        <option value="$PROJECT_DIR$/HoldingYourObjects/RemoveSublist.java" />
       </list>
     </option>
   </component>
@@ -679,12 +697,12 @@
       <workItem from="1490243589944" duration="19000" />
       <workItem from="1490243624010" duration="1801000" />
       <workItem from="1490565814218" duration="572000" />
-      <workItem from="1490669893475" duration="2244000" />
+      <workItem from="1490669893475" duration="3234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107969000" />
+    <option name="totallyTimeSpent" value="108959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
@@ -740,13 +758,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ErrorHandlingWithExceptions/Exercise22.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ErrorHandlingWithExceptions/Exercise23.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1099,6 +1110,22 @@
         <state relative-caret-position="261">
           <caret line="995" column="0" lean-forward="false" selection-start-line="995" selection-start-column="0" selection-end-line="995" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HoldingYourObjects/RemoveSublist.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="15" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="e#79#80#0" expanded="true" />
+            <element signature="e#115#116#0" expanded="true" />
+            <element signature="e#155#156#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#388#394#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
