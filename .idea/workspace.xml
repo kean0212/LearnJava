@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e3b312-7f39-4168-808d-1a64d753cb6f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HoldingYourObjects/CopyUsingListIterator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HoldingYourObjects/InsertToMiddleUsingListIterator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,11 +62,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CopyUsingListIterator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CopyUsingListIterator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HoldingYourObjects/CopyUsingListIterator.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InsertToMiddleUsingListIterator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HoldingYourObjects/InsertToMiddleUsingListIterator.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="14" column="109" lean-forward="false" selection-start-line="14" selection-start-column="109" selection-end-line="14" selection-end-column="109" />
+              <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -159,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ErrorHandlingWithExceptions/ExerciseTwentyOne.java" />
         <option value="$PROJECT_DIR$/ErrorHandlingWithExceptions/Exercise22.java" />
         <option value="$PROJECT_DIR$/ErrorHandlingWithExceptions/Exercise23.java" />
         <option value="$PROJECT_DIR$/ErrorHandlingWithExceptions/Exercise25.java" />
@@ -210,6 +219,7 @@
         <option value="$PROJECT_DIR$/HoldingYourObjects/SequenceIterator.java" />
         <option value="$PROJECT_DIR$/HoldingYourObjects/IteratorForAllCollectionTypes.java" />
         <option value="$PROJECT_DIR$/HoldingYourObjects/CopyUsingListIterator.java" />
+        <option value="$PROJECT_DIR$/HoldingYourObjects/InsertToMiddleUsingListIterator.java" />
       </list>
     </option>
   </component>
@@ -740,12 +750,12 @@
       <workItem from="1490243624010" duration="1801000" />
       <workItem from="1490565814218" duration="572000" />
       <workItem from="1490669893475" duration="3629000" />
-      <workItem from="1490708636374" duration="1743000" />
+      <workItem from="1490708636374" duration="2291000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111097000" />
+    <option name="totallyTimeSpent" value="111645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
@@ -801,13 +811,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ErrorHandlingWithExceptions/Exercise27.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ErrorHandlingWithExceptions/ExerciseFour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1160,8 +1163,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HoldingYourObjects/CopyUsingListIterator.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HoldingYourObjects/InsertToMiddleUsingListIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="14" column="109" lean-forward="false" selection-start-line="14" selection-start-column="109" selection-end-line="14" selection-end-column="109" />
+          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
           <folding />
         </state>
       </provider>
