@@ -26,13 +26,13 @@ public class CompareArrays {
         for (int i = 0; i < 10; ++i) {
             compareTestClassesOne[i] = new CompareTestClass(5);
         }
-        System.out.println(compareTestClassesOne + Arrays.toString(compareTestClassesOne));
+        System.out.println(compareTestClassesOne + ": " + Arrays.toString(compareTestClassesOne));
 
         CompareTestClass[] compareTestClassesTwo = new CompareTestClass[size];
         for (int i = 0; i < 10; ++i) {
             compareTestClassesTwo[i] = new CompareTestClass(5);
         }
-        System.out.println(compareTestClassesTwo + " " + Arrays.toString(compareTestClassesOne));
+        System.out.println(compareTestClassesTwo + ": " + Arrays.toString(compareTestClassesTwo));
 
         System.out.println("array one == array two: " + Arrays.equals(compareTestClassesOne, compareTestClassesTwo));
     }
