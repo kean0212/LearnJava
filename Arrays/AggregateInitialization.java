@@ -3,6 +3,8 @@ class BerylliumSphere {
     private static long counter;
     private final long id = counter++;
 
+    public String name; // this is for testing shallow copy
+
     public String toString() {
         return "Sphere " + id;
     }
