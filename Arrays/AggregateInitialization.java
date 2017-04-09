@@ -1,12 +1,20 @@
 
-class BerylliumSphere {
-    private static long counter;
-    private final long id = counter++;
+class BerylliumSphere implements Comparable<BerylliumSphere> {
+    private static int counter;
+    private int id = counter++;
 
     public String name; // this is for testing shallow copy
 
     public String toString() {
         return "Sphere " + id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public int compareTo(BerylliumSphere another) {
+        return -(id - another.getId());
     }
 }
 
