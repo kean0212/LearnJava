@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e3b312-7f39-4168-808d-1a64d753cb6f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Arrays/UnpredictableBinarySearch.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Arrays/SortUsingComparator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,13 +39,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnpredictableBinarySearch.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UnpredictableBinarySearch.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Arrays/UnpredictableBinarySearch.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
               <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SortUsingComparator.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Arrays/SortUsingComparator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#207#208#0" expanded="true" />
+                <element signature="e#253#254#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,7 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Annotations/Member.java" />
         <option value="$PROJECT_DIR$/Annotations/TableCreator.java" />
         <option value="$PROJECT_DIR$/Annotations/database/TableCreator.java" />
         <option value="$PROJECT_DIR$/Annotations/database/Member.java" />
@@ -178,6 +191,7 @@
         <option value="$PROJECT_DIR$/Arrays/AggregateInitialization.java" />
         <option value="$PROJECT_DIR$/Arrays/ArrayElementComparison.java" />
         <option value="$PROJECT_DIR$/Arrays/UnpredictableBinarySearch.java" />
+        <option value="$PROJECT_DIR$/Arrays/BinarySearchUsingComparator.java" />
       </list>
     </option>
   </component>
@@ -716,12 +730,12 @@
       <workItem from="1490565814218" duration="572000" />
       <workItem from="1490669893475" duration="3629000" />
       <workItem from="1490708636374" duration="10694000" />
-      <workItem from="1491311033000" duration="24528000" />
+      <workItem from="1491311033000" duration="25041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144576000" />
+    <option name="totallyTimeSpent" value="145089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1436" height="877" extended-state="6" />
@@ -777,13 +791,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Annotations/database/TableCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1264,6 +1271,18 @@
           <caret line="21" column="20" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Arrays/SortUsingComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
           </folding>
         </state>
       </provider>
