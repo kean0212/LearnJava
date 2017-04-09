@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e3b312-7f39-4168-808d-1a64d753cb6f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Arrays/Create2DArrayOfBerylliumSphere.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Arrays/Create3DArrayOfBerylliumSphere.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,11 +29,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Create2DArrayOfBerylliumSphere.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Create2DArrayOfBerylliumSphere.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Arrays/Create2DArrayOfBerylliumSphere.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="8" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Create3DArrayOfBerylliumSphere.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Arrays/Create3DArrayOfBerylliumSphere.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="99" lean-forward="false" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -112,7 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TypeInformation/SimpleProxyDemo.java" />
         <option value="$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java" />
         <option value="$PROJECT_DIR$/TypeInformation/Exercise25Sub.java" />
         <option value="$PROJECT_DIR$/TypeInformation/Exercise25.java" />
@@ -163,6 +172,7 @@
         <option value="$PROJECT_DIR$/Arrays/GenerateThreeDimensionalArray.java" />
         <option value="$PROJECT_DIR$/Arrays/NullInitialization.java" />
         <option value="$PROJECT_DIR$/Arrays/Create2DArrayOfBerylliumSphere.java" />
+        <option value="$PROJECT_DIR$/Arrays/Create3DArrayOfBerylliumSphere.java" />
       </list>
     </option>
   </component>
@@ -701,12 +711,12 @@
       <workItem from="1490565814218" duration="572000" />
       <workItem from="1490669893475" duration="3629000" />
       <workItem from="1490708636374" duration="10694000" />
-      <workItem from="1491311033000" duration="17613000" />
+      <workItem from="1491311033000" duration="17781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137661000" />
+    <option name="totallyTimeSpent" value="137829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1436" height="877" extended-state="6" />
@@ -762,13 +772,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TypeInformation/Exercise15.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -1220,7 +1223,15 @@
     <entry file="file://$PROJECT_DIR$/Arrays/Create2DArrayOfBerylliumSphere.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Arrays/Create3DArrayOfBerylliumSphere.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="99" lean-forward="false" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
           <folding />
         </state>
       </provider>
