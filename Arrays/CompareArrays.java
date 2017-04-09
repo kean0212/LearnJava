@@ -17,6 +17,10 @@ class CompareTestClass {
         }
         return this.integer == ((CompareTestClass) another).integer;
     }
+
+    public int getInteger() {
+        return integer;
+    }
 }
 
 public class CompareArrays {
