@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e3b312-7f39-4168-808d-1a64d753cb6f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Arrays/GenerateThreeDimensionalArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Arrays/NullInitialization.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,11 +38,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GenerateThreeDimensionalArray.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GenerateThreeDimensionalArray.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Arrays/GenerateThreeDimensionalArray.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="584">
               <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NullInitialization.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Arrays/NullInitialization.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -100,7 +109,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/TypeInformation/Exercise19.java" />
         <option value="$PROJECT_DIR$/TypeInformation/Exercise2.java" />
         <option value="$PROJECT_DIR$/TypeInformation/SimpleProxyDemo.java" />
         <option value="$PROJECT_DIR$/TypeInformation/SimpleDynamicProxy.java" />
@@ -151,6 +159,7 @@
         <option value="$PROJECT_DIR$/Arrays/GenerateBerylliumSphere.java" />
         <option value="$PROJECT_DIR$/Arrays/GenerateTwoDimensionalArray.java" />
         <option value="$PROJECT_DIR$/Arrays/GenerateThreeDimensionalArray.java" />
+        <option value="$PROJECT_DIR$/Arrays/NullInitialization.java" />
       </list>
     </option>
   </component>
@@ -689,12 +698,12 @@
       <workItem from="1490565814218" duration="572000" />
       <workItem from="1490669893475" duration="3629000" />
       <workItem from="1490708636374" duration="10694000" />
-      <workItem from="1491311033000" duration="16511000" />
+      <workItem from="1491311033000" duration="16879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136559000" />
+    <option name="totallyTimeSpent" value="136927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1436" height="877" extended-state="6" />
@@ -750,13 +759,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TypeInformation/Exercise19.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TypeInformation/SimpleProxyDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
@@ -1205,6 +1207,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="584">
           <caret line="32" column="29" lean-forward="false" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Arrays/NullInitialization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
           <folding />
         </state>
       </provider>
