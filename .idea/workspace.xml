@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16e3b312-7f39-4168-808d-1a64d753cb6f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Strings/Receipt.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Strings/StringFormat.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Strings/Turtle.java" afterPath="$PROJECT_DIR$/Strings/Turtle.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,12 +29,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Receipt.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Receipt.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Strings/Receipt.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
               <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringFormat.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Strings/StringFormat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+              <folding>
+                <element signature="e#287#288#0" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Annotations/database/Constraints.java" />
         <option value="$PROJECT_DIR$/HoldingYourObjects/GerbilHopping.java" />
         <option value="$PROJECT_DIR$/HoldingYourObjects/SimpleCollection.java" />
         <option value="$PROJECT_DIR$/HoldingYourObjects/Sequence.java" />
@@ -150,6 +161,7 @@
         <option value="$PROJECT_DIR$/Strings/InfiniteRecursion.java" />
         <option value="$PROJECT_DIR$/Strings/Turtle.java" />
         <option value="$PROJECT_DIR$/Strings/Receipt.java" />
+        <option value="$PROJECT_DIR$/Strings/StringFormat.java" />
       </list>
     </option>
   </component>
@@ -689,12 +701,12 @@
       <workItem from="1490565814218" duration="572000" />
       <workItem from="1490669893475" duration="3629000" />
       <workItem from="1490708636374" duration="10694000" />
-      <workItem from="1491311033000" duration="28847000" />
+      <workItem from="1491311033000" duration="29753000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="148895000" />
+    <option name="totallyTimeSpent" value="149801000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="23" width="1436" height="877" extended-state="6" />
@@ -750,7 +762,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/forfun.js" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18905">
@@ -1260,6 +1271,17 @@
         <state relative-caret-position="475">
           <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Strings/StringFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="65" lean-forward="false" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+          <folding>
+            <element signature="e#287#288#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
