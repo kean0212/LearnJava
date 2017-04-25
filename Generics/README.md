@@ -10,12 +10,12 @@ Therefore, generics comes up!
 ## Simple Generics
 1. A holder which is specified to hold a base type can also hold a derived type. However, the 
 declaration of the holder is still using the base type.
-    ``` java_holder_method_tree
+    ```java
     // the type in the second pair of angle brackets cannot be Derived
     Holder<Base> holder = new Holder<Base>(new Derived());
     ```
 2. Casts will be taken care of and the type correctness will be ensured at compile time.
-    ```java_holder_method_tree
+    ```java
     // It can be only Base. Otherwise, there would be compilation error.
     Base derived = holder.get();
     ```
