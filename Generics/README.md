@@ -47,16 +47,16 @@ declaration of the holder is still using the base type.
     2. ```final``` ensures the safety: once it's been initialized, then it cannot be modified.
 
 2. It's a little **tedious** to create a tuple:
-```java
-   SixTuple<String, Integer, Character, Boolean, Float, Double> sixTuple = new SixTuple<String, Integer, Character, Boolean, Float, Double> 
+    ```java
+    SixTuple<String, Integer, Character, Boolean, Float, Double> sixTuple = new SixTuple<String, Integer, Character, Boolean, Float, Double> 
        ("hello", 3, 'a', false, 3.0f, 4.21);
-```
+    ```
 
 ## A Stack Class
 1. Stack is LIFO (last in first out).
 2. It can be implemented using **LinkedList** by putting the last element to the head of the list;
 it can also be implemented using **Generics**.
-```java 
+   ```java 
    class Stack<T> {
        class Node { // inner class
            T item;
@@ -65,11 +65,50 @@ it can also be implemented using **Generics**.
        }
        ...
    }
-```
-**Notes:**
-1. Parameterized type **T** is non-static, therefore to access **T** in the inner class, the inner class **cannot** be `static`.
-2. **End Sentinel** is a only definition saying that in the current context, it means the ending. 
+    ```
+    **Notes:**
+    1. Parameterized type **T** is non-static, therefore to access **T** in the inner class, the inner class **cannot** be `static`.
+    2. **End Sentinel** is a only definition saying that in the current context, it means the ending. 
 
 ## RandomList
 1. Use **generics** to implement a `RandomList<T>` where T can be any **object**.
 2. From this and the previous exercise, **generics** can be quite useful to implement a tool (e.g. `Tuple`, `RandomList`).
+
+## Generic Interfaces
+1. **Generic** can be used to create a **generator** (a specification of **Factory Design Pattern**; the difference is 
+that generator does **NOT** need any arguments while FDP needs to construct an object).
+    ```java
+    interface Generator<T> {
+        T next();
+    }
+    class Coffee {
+        ...
+    }
+    class CoffeeGenerator implements Generator<Coffee> {
+        public Coffee next() {
+            ...
+        }
+        ...
+    }
+    ```
+
+   **Note:**
+   **Autoboxing** and **unautoboxing** do **NOT** apply here. The return type of `next()` and type in the angle brackets
+   have to be exactly same.
+   
+Recall:
+1. To use foreach syntax, the object has to be `Iterable<T>`. It needs to implement method:
+    ```java
+    public Iterator<T> iterator() {
+       public boolean hasNext() {
+           ...
+       }
+       public T next() {
+           ... 
+       }
+       public void remove() {
+           ... 
+       }
+    }
+    ```
+2. Two ways of implementing **adapters**: inheritance and composition.
