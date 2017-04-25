@@ -63,9 +63,13 @@ it can also be implemented using **Generics**.
            Node next;
            ...
        }
-   ...
+       ...
    }
 ```
 **Notes:**
 1. Parameterized type **T** is non-static, therefore to access **T** in the inner class, the inner class **cannot** be `static`.
 2. **End Sentinel** is a only definition saying that in the current context, it means the ending. 
+
+## RandomList
+1. Use **generics** to implement a `RandomList<T>` where T can be any **object**.
+2. From this and the previous exercise, **generics** can be quite useful to implement a tool (e.g. `Tuple`, `RandomList`).
