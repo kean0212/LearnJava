@@ -181,4 +181,7 @@ generic class, there is.
     // The type should match the one in the method signature
     f(New.<Integer, List<? extends Base>>map()); 
     ```
-
+3. Variable argument can also be used in generic methods:
+    ```java
+    public <T> List<T> createList(T... args);
+    ```
