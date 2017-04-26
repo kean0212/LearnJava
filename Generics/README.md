@@ -174,4 +174,11 @@ generic class, there is.
         f(New.map());
     }
     ```
-**Note:** This can be used in **assignment** and **method call**.
+**Note:** 
+1. This can be used in both **assignment** and **method call**.
+2. The parameter type can be specified explicitly.
+    ```java
+    // The type should match the one in the method signature
+    f(New.<Integer, List<? extends Base>>map()); 
+    ```
+

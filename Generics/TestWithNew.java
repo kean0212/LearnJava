@@ -50,5 +50,8 @@ public class TestWithNew {
 
         f(New.set());
         f(New.map());
+
+        f(New.<String>set());
+        f(New.<String, List<?>>map());
     }
 }
