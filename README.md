@@ -1,3 +1,3 @@
 # LearnJava
-## Arrays
-1. Arrays.sort(): for primitive types, it implements Quicksort; while for non-primitive object, it implements Mergesort. 
+This is repo keeps track of all my notes regarding the book **Thinking In Java**.
+
