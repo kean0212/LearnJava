@@ -126,3 +126,27 @@ that generator does **NOT** need any arguments while FDP needs to construct an o
         System.out.println(derived); // This will output Derived
     ...
     ```
+
+## Generic Methods
+1. Methods can be parameterized by putting `<T>` in front of the return type.
+    ```java
+    class GenericMethod {
+        public <A, B> String toString(A a, B b) {
+            ... 
+        }
+    }
+    ```
+   Note: one interesting founding is that the return type can also be parameterized with the 
+   **risk** of casting.
+2. `static` method **cannot** access the parameter type of the generic class. The only way
+is to make the `static` method generic.
+    ```java
+    class GenericMethod<T> {
+        private <T> void g(T t) {
+            ...
+        }
+    }
+    ```
+3. ***Type argument inference***: the compiler use to figure out the parameter type for generic 
+methods. Therefore, there is no need to specify the parameter type for generic methods. But for 
+generic class, there is.
