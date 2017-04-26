@@ -1,5 +1,6 @@
-#Generics
+# Generics
 This chapter illustrates the details about Generics in java.
+
 ## Why Generics?
 There are two ways to break the constraint of writing code to be used across multiple types:
 1. **Polymorphism**: code takes the base class (subclasses can be passed in). However, it's still
@@ -48,7 +49,7 @@ declaration of the holder is still using the base type.
 
 2. It's a little **tedious** to create a tuple:
     ```java
-    SixTuple<String, Integer, Character, Boolean, Float, Double> sixTuple = new SixTuple<String, Integer, Character, Boolean, Float, Double> 
+    SixTuple<String, Integer, Characters, Boolean, Float, Double> sixTuple = new SixTuple<String, Integer, Characters, Boolean, Float, Double> 
        ("hello", 3, 'a', false, 3.0f, 4.21);
     ```
 
@@ -96,7 +97,7 @@ that generator does **NOT** need any arguments while FDP needs to construct an o
    **Autoboxing** and **unautoboxing** do **NOT** apply here. The return type of `next()` and type in the angle brackets
    have to be exactly same.
    
-Recall:
+### Recall:
 1. To use foreach syntax, the object has to be `Iterable<T>`. It needs to implement method:
     ```java
     public Iterator<T> iterator() {
@@ -112,3 +113,16 @@ Recall:
     }
     ```
 2. Two ways of implementing **adapters**: inheritance and composition.
+3. **Polymorphism** also applies to the instance method in the base class.
+    ```java
+    class Base {
+        public String toString() {
+            return getClass();
+        }
+    }
+    class Derived extends Base {}
+    ...
+        Base derived = new Derived();
+        System.out.println(derived); // This will output Derived
+    ...
+    ```
