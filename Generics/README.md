@@ -155,19 +155,23 @@ generic class, there is.
 1. **Type argument inference** can be used to reduce the code repetition.
     ```java
     // Without type argument inference
-    Map<Integer, List<? extends Base>> map = new Map<Integer, List<? extends Base>>();
+    private Map<Integer, List<? extends Base>> map = new Map<Integer, List<? extends Base>>();
 
     // With type argument inference
-    class New {
+    private class New {
         public static <K, V> Map<K, V> map() {
             return new HashMap<K, V>();
         }
     }
+    
     // Assignment
-    Map<Integer, List<? extends Base>> map = New.map();
-    // Method call
+    private Map<Integer, List<? extends Base>> map = New.map();
+
+    // Mehtod call
     public void f(Map<Integer, List<? extends Base>> map) {
     }
-    f(New.map());
+    public static void main(String[] args) {
+        f(New.map());
+    }
     ```
 **Note:** This can be used in **assignment** and **method call**.
