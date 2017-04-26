@@ -185,3 +185,14 @@ generic class, there is.
     ```java
     public <T> List<T> createList(T... args);
     ```
+4. Generic method and generic interface can be combined together to implement a generator
+    ```java
+    public class Generators {
+        // This can fill all subclasses of Collection
+        public static <T> Collection<T> fill(Collection<T> collection, Generator<T> generator, int size);
+    }
+    ```
+    * The `fill` method for `List` and `LinkedList` **can** be overloaded
+    * When call `fill` on `LinkedList` causes ambiguity because `LinkedList` implements both `List` and 
+    `Queue`, we need casting to solve this problem. But if `fill(LinkedList<T> linkedList)` exists, this 
+    function will be called instead.
