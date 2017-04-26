@@ -150,3 +150,24 @@ is to make the `static` method generic.
 3. ***Type argument inference***: the compiler use to figure out the parameter type for generic 
 methods. Therefore, there is no need to specify the parameter type for generic methods. But for 
 generic class, there is.
+
+## Leveraging Type Argument Inference
+1. **Type argument inference** can be used to reduce the code repetition.
+    ```java
+    // Without type argument inference
+    Map<Integer, List<? extends Base>> map = new Map<Integer, List<? extends Base>>();
+
+    // With type argument inference
+    class New {
+        public static <K, V> Map<K, V> map() {
+            return new HashMap<K, V>();
+        }
+    }
+    // Assignment
+    Map<Integer, List<? extends Base>> map = New.map();
+    // Method call
+    public void f(Map<Integer, List<? extends Base>> map) {
+    }
+    f(New.map());
+    ```
+**Note:** This can be used in **assignment** and **method call**.
