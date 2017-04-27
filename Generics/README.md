@@ -185,7 +185,9 @@ generic class, there is.
     ```java
     public <T> List<T> createList(T... args);
     ```
-4. Generic method and generic interface can be combined together to implement a generator
+    
+## Generator
+1. Generic method and generic interface can be combined together to implement a generator
     ```java
     public class Generators {
         // This can fill all subclasses of Collection
@@ -196,3 +198,10 @@ generic class, there is.
     * When call `fill` on `LinkedList` causes ambiguity because `LinkedList` implements both `List` and 
     `Queue`, we need casting to solve this problem. But if `fill(LinkedList<T> linkedList)` exists, this 
     function will be called instead.
+### General-Purpose Generator
+1. This constructs a generator by passing the `Class` object, and uses `newInstance()` method to create an
+instance.
+2. The generic type for `Class` object is represented by `Class<T>`.
+**Notes:**
+    * This assumes that the class has default constructor.
+    * Pay attention to the accessibility when it comes to `Class` method.
