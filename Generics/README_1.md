@@ -198,6 +198,7 @@ generic class, there is.
     * When call `fill` on `LinkedList` causes ambiguity because `LinkedList` implements both `List` and 
     `Queue`, we need casting to solve this problem. But if `fill(LinkedList<T> linkedList)` exists, this 
     function will be called instead.
+    
 ### General-Purpose Generator
 1. This constructs a generator by passing the `Class` object, and uses `newInstance()` method to create an
 instance.
