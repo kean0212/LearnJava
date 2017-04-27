@@ -202,6 +202,7 @@ generic class, there is.
 1. This constructs a generator by passing the `Class` object, and uses `newInstance()` method to create an
 instance.
 2. The generic type for `Class` object is represented by `Class<T>`.
+
 **Notes:**
-    * This assumes that the class has default constructor.
-    * Pay attention to the accessibility when it comes to `Class` method.
+* This assumes that the class has default constructor.
+* Pay attention to the accessibility when it comes to `Class` method.
