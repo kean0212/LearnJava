@@ -17,3 +17,33 @@ run time.
 3. Therefore, in order to call the methods of parameter type, we need to assist the generic 
 class by giving it a bound (e.g. `<T extends String>`). The compiler replaces the parameter 
 type with its erasure, which in this case is the ***bound***.
+
+## Compensating for Erasure
+1. **Erasure** loses the exact type information at runtime, therefore, the methods require the 
+information can **NOT** work:
+    ```java
+    class Test<T> {
+       ...
+           // Error with instanceof
+           if (argument instanceof T) {
+               ...
+           }
+           // Error with new
+           T var = new T();
+       ...
+    }
+    ```
+2. The way to compensate this is adding a **type tag**, as following:
+    ```java
+    class Test<T> {
+        Class<?> type;
+        
+        public Test(Class<?> type) {
+            this.type = type;
+        }
+        ...
+            if (type.isInstance(argument)) {}
+        ...
+            T var = (T) type.newInstance();
+    }
+    ```
