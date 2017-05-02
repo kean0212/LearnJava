@@ -42,8 +42,10 @@ information can **NOT** work:
             this.type = type;
         }
         ...
-            if (type.isInstance(argument)) {}
+            if (type.isInstance(argument)) {...}
         ...
             T var = (T) type.newInstance();
     }
     ```
+    
+:trollface:
