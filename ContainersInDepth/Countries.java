@@ -3,6 +3,7 @@
 /*
 This is the copy of the file from Mindview Inc to avoid building process.
  */
+
 import java.util.*;
 
 public class Countries {
@@ -161,6 +162,10 @@ public class Countries {
 
             public int hashCode() {
                 return DATA[index][0].hashCode();
+            }
+
+            public String toString() {
+                return getKey() + ": " + getValue();
             }
         }
 
