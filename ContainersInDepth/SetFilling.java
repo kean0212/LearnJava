@@ -21,11 +21,17 @@ public class SetFilling {
         }
         System.out.println("WRONG Original capital set: " + capitalSet);
         // The output is 10 same entries
-        // Since there is only one Iterator in the EntrySet and only one Entry in the Iterator, when iterating through the
-        // entry set, the same entry with different indexes (different hashcodes lead to duplicates) added to the set.
-        // But the references are same, so after the last iteration, the index is updated to 9. Therefore, all elements
-        // in the set are the 9th element.
+        /*
+        Since there is only one Iterator in the EntrySet and only one Entry in the Iterator, when iterating through the
+        entry set, the same entry with incremented index is added to the set mutiple times.
 
+        The reason why the same entry can be successfully added to the set is that the hashcode changes. And the add
+        method uses the hashcode to detect if the element exists in the set. Therefore, the same entry is added multiple
+        times.
+
+        Because the references are same, after the last iteration, the index in the entry (in the iterator) is updated to 9.
+        Therefore, all elements in the set are the 9th element.
+        */
         capitalSet = Countries.capitals(10).entrySet();
         System.out.println("RIGHT Original capital set: " + capitalSet);
 
