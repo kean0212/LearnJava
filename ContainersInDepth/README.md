@@ -14,5 +14,6 @@ based on hash code, and then create and add a new element in the `Set`.
 
 4. The element in `TreeSet` has to be `Comparable`.
 
-5. Remember the pain caused by ***flyweight design pattern***, see `SetFilling.java`.
+5. Remember the pain caused by ***flyweight design pattern***, see 
+[SetFilling.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/SetFilling.java#L23).
     
