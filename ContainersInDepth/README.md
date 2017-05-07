@@ -17,7 +17,9 @@ based on hash code, and then create and add a new element in the `Set`.
 5. Remember the pain caused by ***flyweight design pattern***, see 
 [SetFilling.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/SetFilling.java#L23).
 
+
 ## Filling Containers
+
 ### `Collections` -- `fill` and `nCopies` for `List`
 1. `fill(list, object)`: replaces all elements with the specified object
     * An **empty** list after `fill` is still **empty**
@@ -30,8 +32,39 @@ based on hash code, and then create and add a new element in the `Set`.
     // To make it "mutable" - construct a "mutable" list
     list = new ArrayList<String>(list);
     ```
-**Note**: no matter it's `fill` or `nCopies`, the reference of the specified object is used to fill the 
-`List`, which means if the specified object changes, the `List` changes. Even though the result of 
-`nCopies` is immutable (which means the value (reference) of the element is immutable), the `List` still
+**Note**: No matter it's `fill` or `nCopies`, the reference of the specified object (even for the object instantiated 
+using `new` ) is used to fill the `List`, which means if the specified object changes, the `List` changes. Even though 
+the result of `nCopies` is immutable (which means the value (reference) of the element is immutable), the `List` still
 reflects the change.
+  
+### A Generator Solution
+1. All `Collection` subtypes have a constructor which takes another `Collection` instance 
+to fill the new container
+    ```java
+    List<String> stringList = Arrays.asList({"hello", "world"});
+    Set<String> stringSet = new HashSet<String>(stringList);
+    List<String> stringListTwo = new ArrayList<String>(stringList);
+    Queue<String> stringQueue = new Queue<String>(stringList);
+    ```
     
+2. Method `toCollection.addAll(fromCollection)` can be used to fill a `Collection` as well.
+
+### Map Generators
+1. Read-only **Data Transfer Object**:
+    ```java
+    // This is a data object
+    // "public" makes it easy to access,
+    // "final" makes it immutable
+    public class DTO<T> {
+        public final T property;
+        ...
+    }
+    ```
+
+### Using Abstract Classes
+1. All containers including `Collection`, `List`, `Set`, and `Map` have abstract classes, 
+so that we only need to implement partial methods to produce the desired container.
+
+2. **Flyweight** design pattern: it is a design pattern that uses only simple properties to satisfy
+a complex need, such as adding a `size` property in a `EntrySet` to indicate what data is stored in
+the `EntrySet` instead of storing the real data inside the `EntrySet`.
