@@ -68,3 +68,8 @@ so that we only need to implement partial methods to produce the desired contain
 2. **Flyweight** design pattern: it is a design pattern that uses only simple properties to satisfy
 a complex need, such as adding a `size` property in a `EntrySet` to indicate what data is stored in
 the `EntrySet` instead of storing the real data inside the `EntrySet`.
+
+### Unsupported Operations
+It appears that some methods in `interface` are optional, meaning that the implementing classes
+do **NOT** have to implement those methods. For example, the `List` returned by `Arrays.asList(array)`
+does not support the optional methods, such as `add()`, `remove()`, becuase the list is fixed-size.
