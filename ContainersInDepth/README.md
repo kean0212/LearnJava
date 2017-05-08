@@ -76,7 +76,11 @@ does not support the optional methods, such as `add()`, `remove()`, becuase the 
 
 ### ListIterator
 1. A **bidirectional** iterator of `List`.
+
 2. It is a cursor between nodes, shown as follow:
 
     ![alt text](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/img/ListIterator.png)
 3. The call of `previous()` or `next()` will move the cursor.
+
+4. Method `add(element)` adds the element to the left of the cursor; while `set(element)` sets the element
+returned by the last call of `previous()` or `next()`. Under both circumstances, the cursor postion is updated.
