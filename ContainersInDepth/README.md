@@ -73,3 +73,10 @@ the `EntrySet` instead of storing the real data inside the `EntrySet`.
 It appears that some methods in `interface` are optional, meaning that the implementing classes
 do **NOT** have to implement those methods. For example, the `List` returned by `Arrays.asList(array)`
 does not support the optional methods, such as `add()`, `remove()`, becuase the list is fixed-size.
+
+### ListIterator
+1. A **bidirectional** iterator of `List`.
+2. It is a cursor between nodes, shown as follow:
+
+    ![alt text](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/img/ListIterator.png)
+3. The call of `previous()` or `next()` will move the cursor.
