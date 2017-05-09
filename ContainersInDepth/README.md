@@ -84,3 +84,6 @@ does not support the optional methods, such as `add()`, `remove()`, becuase the 
 
 4. Method `add(element)` adds the element to the left of the cursor; while `set(element)` sets the element
 returned by the last call of `previous()` or `next()`. Under both circumstances, the cursor postion is updated.
+
+**Note**: When using `ListIterator` to add element backwards, pay attention to `previous()`. The number of 
+the calls in [ListInsertion.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/ListInsertion.java#L39).
