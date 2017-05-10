@@ -87,3 +87,11 @@ returned by the last call of `previous()` or `next()`. Under both circumstances,
 
 **Note**: When using `ListIterator` to add element backwards, pay attention to `previous()`. The number of 
 the calls in [ListInsertion.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/ListInsertion.java#L39).
+
+### Sets and Storage Order
+|Set Type|Element Requirements|Note|
+|Set| The element type should have a proper `equals()`|
+|HashSet| The element type should have a proper `hashCode()`|
+|TreeSet| The element type should implement `Comparable`|
+|LinkedHashSet| The element type should have a proper `hashCode()`|
+**Note:** For good programming style, we should always override `hashCode()` when we override `equals()`.
