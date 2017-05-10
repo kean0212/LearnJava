@@ -89,11 +89,12 @@ returned by the last call of `previous()` or `next()`. Under both circumstances,
 the calls in [ListInsertion.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/ListInsertion.java#L39).
 
 ### Sets and Storage Order
-|Set Type|Element Requirements|
-|:-------------:|:-------------|
-|Set| The element type should have a proper `equals()`|
-|HashSet| The element type should have a proper `hashCode()`|
-|TreeSet| The element type should implement `Comparable`|
-|LinkedHashSet| The element type should have a proper `hashCode()`|
+Set Type|Element Requirements
+:-------------:|:-------------
+Set| The element type should have a proper `equals()`
+HashSet| The element type should have a proper `hashCode()`
+TreeSet| The element type should implement `Comparable`
+LinkedHashSet| The element type should have a proper `hashCode()`
+
 **Note:** For good programming style, we should always override `hashCode()` when we override `equals()`.
 
