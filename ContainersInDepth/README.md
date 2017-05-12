@@ -123,3 +123,22 @@ Set Type|Element Requirements
     sortedSet.headSet(toElement); // (...toElement)
     
     ```
+    
+### PriorityQueue
+1. The construction of `PriorityQueue` requires either `Comparator` or "natural ordering" (the element implements 
+interface `Comparable`).
+    ```java
+    // Comparator
+    PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>(10, Collections.reverseOrder());
+    
+    // Natural ordering
+    PriorityQueue<String> priorityQueue = new PrirotityQueue<Integer>();
+    ```
+
+1. `PriorityQueue` is a `class`, not an `interface`.
+
+1. Methods: `offer(element), peek(), poll(), size(), clear()`; if the queue is empty, `peek()` and `poll()` will return 
+`null`. 
+
+**Recall**: `compareTo(object)` in `Comparable`; `compare(o1, o2)` of `Comparator` in `java.lang`; `compare(o1, o2)` in 
+`Comparator` in `java.util`.
