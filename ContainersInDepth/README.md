@@ -98,3 +98,28 @@ Set Type|Element Requirements
 
 **Note:** For good programming style, we should always override `hashCode()` when we override `equals()`.
 
+### SortedSet
+1. `SortedSet` is **ONLY** an interface which has special methods, one of the implementing class is `TreeSet`.
+
+2. Useful methods: 
+    ```java 
+    // List
+    list.isEmpty(); 
+    
+    // LinkedList
+    linkedList.add(index, element); 
+    linkedList.get(index);
+    linkedList.getFirst();
+    linkedList.getLast();
+    
+    // Comparable
+    comparableOne.compareTo(comparableTwo);
+    
+    // SortedSet
+    sortedSet.first();
+    sortedSet.last();
+    sortedSet.subSet(fromElement, toElement); // [fromElement, toElement)
+    sortedSet.tailSet(fromElement); // [fromElement...)
+    sortedSet.headSet(toElement); // (...toElement)
+    
+    ```
