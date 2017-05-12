@@ -142,3 +142,10 @@ interface `Comparable`).
 
 **Recall**: `compareTo(object)` in `Comparable`; `compare(o1, o2)` of `Comparator` in `java.lang`; `compare(o1, o2)` in 
 `Comparator` in `java.util`.
+
+### Understanding Maps
+Map | Characteristics of Order
+:---:|:---
+`HashMap`|Order is based on the hash code
+`TreeMap`|Order is based on the key
+`LinkedHashMap`|Order is same as the insertion order 
