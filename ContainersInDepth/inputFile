@@ -1,0 +1,3 @@
+This class consists exclusively of static methods that operate on or return collections.
+It contains polymorphic algorithms that operate on collections.
+This is also a test for the fundamental implementation of map.
