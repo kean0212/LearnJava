@@ -164,5 +164,5 @@ Map | Characteristics of Order
 **Notes**:
 1. `put()` or `putAll()` updates the `Map` if the key already exists in it.
 2. `keySet()` and `values()` are backed by the `Map`. Therefore, any changes to the `Collection` will be reflected in the
-associated `Map`.
+associated `Map`. For details, take a look at [SlowMap.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/SlowMap.java#L21).
 3. `Properties` in `java.util` package is backed by `HashTable<Object, Object>`.
