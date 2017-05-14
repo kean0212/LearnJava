@@ -149,3 +149,20 @@ Map | Characteristics of Order
 `HashMap`|Order is based on the hash code
 `TreeMap`|Order is based on the key
 `LinkedHashMap`|Order is same as the insertion order 
+
+### Performance
+
+`Map` | Performance
+:----:|:----
+`HashMap`|Provides constant-time performance for inserting and locating pairs.
+`LinkedHashMap`|When iterating through it, we get the pairs in insertion order, or in least-recently-used(**LRU**).
+`TreeMap`|Pairs will be in sorted order(determined by `Comparable` or `Comparator`. The only `Map` provides `subMap()` method.
+`WeakHashMap`|If no references to a particular key are held outside the map,that key may be garbage collected.
+`ConcurrentHashMap`|A thread-safe `Map` which does not involve synchronization locking.
+`IdentityHashMap`|A hash map that uses `==` instead of `equals()` to compare keys.
+
+**Notes**:
+1. `put()` or `putAll()` updates the `Map` if the key already exists in it.
+2. `keySet()` and `values()` are backed by the `Map`. Therefore, any changes to the `Collection` will be reflected in the
+associated `Map`.
+3. `Properties` in `java.util` package is backed by `HashTable<Object, Object>`.
