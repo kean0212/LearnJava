@@ -166,3 +166,6 @@ Map | Characteristics of Order
 2. `keySet()` and `values()` are backed by the `Map`. Therefore, any changes to the `Collection` will be reflected in the
 associated `Map`. For details, take a look at [SlowMap.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/SlowMap.java#L21).
 3. `Properties` in `java.util` package is backed by `HashTable<Object, Object>`.
+4. Extending `AbstractSet` is same as extending `AbstractCollection`. Need to override `size()` and `iterator()`. To make
+the "set" modifiable, we also need to override the method `remove()` in `iterator()` and `add(E e)` in the "set". All the
+other methods are based upon these. [SlowSet.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/SlowSet.java).
