@@ -169,3 +169,14 @@ associated `Map`. For details, take a look at [SlowMap.java](https://github.com/
 4. Extending `AbstractSet` is same as extending `AbstractCollection`. Need to override `size()` and `iterator()`. To make
 the "set" modifiable, we also need to override the method `remove()` in `iterator()` and `add(E e)` in the "set". All the
 other methods are based upon these. [SlowSet.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/SlowSet.java).
+
+### Hashing for Speed
+
+The idea behind `HashMap`:
+1. The hash code of the key is used to locate the **bucket** in the buckets which is an array.
+2. Then linear search is used to find the key inside the bucket. 
+
+Apparently, bucket can have **collision** unless the hashing function was a **perfect**.
+The real implementation of `HashMap` in jdk1.8 is similar except each bucket has a maximum size of 2. 
+If the size exceeds the threshold, the map resizes.
+

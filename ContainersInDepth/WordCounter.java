@@ -7,8 +7,8 @@ public class WordCounter {
         String fileContent = TextFile.read(fileName);
         String[] words = fileContent.split("[\\p{Punct}\\s]+");
 
-        Map<String, Integer> associativeArray = new HashMap(words.length);
-        for (String key: words) {
+        Map<String, Integer> associativeArray = new SimpleHashMap<String, Integer>();
+        for (String key : words) {
             Integer count = associativeArray.get(key);
             if (count == null) {
                 count = 0;
