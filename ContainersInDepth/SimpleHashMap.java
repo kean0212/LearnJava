@@ -7,14 +7,28 @@ import java.util.ListIterator;
 
 public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
     static final int SIZE = 997;
+    private int numberOfCollisions = 0;
 
     @SuppressWarnings("unchecked")
     private LinkedList<Map.Entry<K, V>>[] buckets = new LinkedList[SIZE];
+
+    @SuppressWarnings("unchecked")
+    public SimpleHashMap(Map<? extends K, ? extends V> map) {
+        for (Map.Entry mapEntry : map.entrySet()) {
+            put((K) mapEntry.getKey(), (V) mapEntry.getValue());
+        }
+    }
+
+    public int getNumberOfCollisions() {
+        return numberOfCollisions;
+    }
 
     public V put(K key, V value) {
         int index = Math.abs(key.hashCode()) % SIZE;
         if (buckets[index] == null) {
             buckets[index] = new LinkedList<Map.Entry<K, V>>();
+        } else {
+            numberOfCollisions++;
         }
 
         V oldValue = null;
@@ -60,5 +74,12 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
             }
         }
         return entrySet;
+    }
+
+    @SuppressWarnings("unchecked")
+    public void putAll(Map<? extends K, ? extends V> map) {
+        for (Map.Entry mapEntry : map.entrySet()) {
+            put((K) mapEntry.getKey(), (V) mapEntry.getValue());
+        }
     }
 }

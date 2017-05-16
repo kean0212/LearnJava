@@ -180,3 +180,7 @@ Apparently, bucket can have **collision** unless the hashing function was a **pe
 The real implementation of `HashMap` in jdk1.8 is similar except each bucket has a maximum size of 2. 
 If the size exceeds the threshold, the map resizes.
 
+`AbstractMap` has only the default constructor. Therefore, we have to implement others.
+The implementation of `size()` in `AbstractMap` returns `entrySet().size()`.
+This means that we should pay attention to whether override `entrySet()` or not when subclassing `AbstractMap`.
+
