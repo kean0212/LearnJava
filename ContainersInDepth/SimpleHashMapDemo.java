@@ -23,5 +23,15 @@ public class SimpleHashMapDemo {
 
         Util.println("simpleHashMap.remove(\"hahaha\"): " + simpleHashMap.remove("hahaha"));
         Util.println(simpleHashMap);
+
+        Util.println("simpleHashMap.containsKey(\"CAPE VERDE\"): " + simpleHashMap.containsKey("CAPE VERDE"));
+        Util.println("simpleHashMap.containsKey(\"ANGOLA\"): " + simpleHashMap.containsKey("ANGOLA"));
+        Util.println("simpleHashMap.keySet(): " + simpleHashMap.keySet());
+        Util.println("simpleHashMap.isEmpty(): " + simpleHashMap.isEmpty());
+        Util.println("simpleHashMap.size(): " + simpleHashMap.size());
+        Util.println("simpleHashMap.values(): " + simpleHashMap.values());
+
+        SimpleHashMap<String, String> simpleHashMapCopy = new SimpleHashMap<String, String>(capitals);
+        Util.println("simpleHashMap == simpleHashMapCopy: " + (simpleHashMap == simpleHashMapCopy));
     }
 }

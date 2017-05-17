@@ -184,3 +184,8 @@ If the size exceeds the threshold, the map resizes.
 The implementation of `size()` in `AbstractMap` returns `entrySet().size()`.
 This means that we should pay attention to whether override `entrySet()` or not when subclassing `AbstractMap`.
 
+`AbstractMap` implements `Map` interface. 
+Therefore, all of the methods have been implemented.
+Many methods depend on `entrySet()` which makes `entrySet()` important.
+
+
