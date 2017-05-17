@@ -11,5 +11,6 @@ public class SimpleHashMapDemo {
         Util.println(simpleHashMap);
         Util.println("size of collisions: " + simpleHashMap.size());
         Util.println("number of collisions: " + simpleHashMap.getNumberOfCollisions()); // size
+        Util.println("number of probes: " + simpleHashMap.getNumberOfProbes()); // size
     }
 }

@@ -8,6 +8,7 @@ import java.util.ListIterator;
 public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
     static final int SIZE = 997;
     private int numberOfCollisions = 0;
+    private int numberOfProbes = 0;
 
     @SuppressWarnings("unchecked")
     private LinkedList<Map.Entry<K, V>>[] buckets = new LinkedList[SIZE];
@@ -23,6 +24,10 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
         return numberOfCollisions;
     }
 
+    public int getNumberOfProbes() {
+        return numberOfProbes;
+    }
+
     public V put(K key, V value) {
         int index = Math.abs(key.hashCode()) % SIZE;
         if (buckets[index] == null) {
@@ -36,6 +41,7 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
         LinkedList<Map.Entry<K, V>> bucket = buckets[index];
         ListIterator<Map.Entry<K, V>> listIterator = bucket.listIterator();
         while (listIterator.hasNext()) {
+            numberOfProbes++;
             Map.Entry<K, V> entry = listIterator.next();
             K entryKey = entry.getKey();
             if (entryKey.equals(key)) {
