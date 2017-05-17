@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.ListIterator;
+import java.util.Iterator;
 
 public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
     static final int SIZE = 997;
@@ -87,5 +88,31 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
         for (Map.Entry mapEntry : map.entrySet()) {
             put((K) mapEntry.getKey(), (V) mapEntry.getValue());
         }
+    }
+
+    public void clear() {
+        for (LinkedList<Map.Entry<K, V>> bucket : buckets) {
+            if (bucket != null) {
+                bucket.clear();
+            }
+        }
+    }
+
+    @SuppressWarnings("unchecked")
+    public V remove(Object key) {
+        V oldValue = null;
+        int bucketIndex = Math.abs(key.hashCode()) % SIZE;
+        LinkedList<Map.Entry<K, V>> bucket = buckets[bucketIndex];
+        if (bucket != null) {
+            Iterator iterator = bucket.iterator();
+            while (iterator.hasNext()) {
+                Map.Entry<K, V> entry = (Map.Entry<K, V>) iterator.next();
+                if (key != null && key.equals(entry.getKey())) {
+                    oldValue = entry.getValue();
+                    iterator.remove();
+                }
+            }
+        }
+        return oldValue;
     }
 }
