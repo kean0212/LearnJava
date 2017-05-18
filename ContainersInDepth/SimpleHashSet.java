@@ -17,16 +17,35 @@ public class SimpleHashSet<E> extends AbstractSet<E> {
 
     public Iterator<E> iterator() {
         return new Iterator<E>() {
+            int bucketIndex = 0;
+            int elementIndex = -1;
+
+            // Update the indices to the next element
             public boolean hasNext() {
+                LinkedList<E> bucket = buckets[bucketIndex];
+                if (bucket != null && elementIndex < bucket.size() - 1) {
+                    elementIndex++;
+                    return true;
+                }
+                for (int i = bucketIndex + 1; i < SIZE; ++i) {
+                    if (buckets[i] != null) {
+                        bucketIndex = i;
+                        elementIndex = 0;
+                        return true;
+                    }
+                }
                 return false;
             }
 
             public E next() {
-                return null;
+                return buckets[bucketIndex].get(elementIndex);
             }
 
             public void remove() {
-
+                buckets[bucketIndex].remove(elementIndex);
+                if (buckets[bucketIndex].isEmpty()) {
+                    buckets[bucketIndex] = null;
+                }
             }
         };
     }
@@ -44,6 +63,7 @@ public class SimpleHashSet<E> extends AbstractSet<E> {
             }
         }
         bucket.add(e);
+        count++;
         return true;
     }
 }
