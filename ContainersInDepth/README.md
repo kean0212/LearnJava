@@ -188,4 +188,6 @@ This means that we should pay attention to whether override `entrySet()` or not 
 Therefore, all of the methods have been implemented.
 Many methods depend on `entrySet()` which makes `entrySet()` important.
 
+I spent most of today on work even after work time...
+
 
