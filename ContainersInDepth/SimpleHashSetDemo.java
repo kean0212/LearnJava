@@ -20,5 +20,23 @@ public class SimpleHashSetDemo {
 
         List<String> subCountryNames = Countries.names(5);
         Util.println("simpleHashSet.containsAll(subCountryNames): " + simpleHashSet.containsAll(subCountryNames));
+
+        Util.println("simpleHashSet.isEmpty(): " + simpleHashSet.isEmpty());
+
+        Util.println("simpleHashSet.retainAll(subCountryNames): " + simpleHashSet.retainAll(subCountryNames));
+        Util.println("simpleHashSet: " + simpleHashSet);
+
+        Util.println("simpleHashSet.removeAll(subCountryNames): " + simpleHashSet.removeAll(subCountryNames));
+        Util.println("simpleHashSet.isEmpty(): " + simpleHashSet.isEmpty());
+
+        Util.println("simpleHashSet.size(): " + simpleHashSet.size());
+
+        simpleHashSet.addAll(countryNames);
+
+        Util.println("Array: ");
+        Object[] array = simpleHashSet.toArray();
+        for (Object string : array) {
+            Util.println(string);
+        }
     }
 }

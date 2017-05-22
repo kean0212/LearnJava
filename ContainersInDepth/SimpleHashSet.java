@@ -1,17 +1,25 @@
 import java.util.AbstractSet;
 import java.util.LinkedList;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Iterator;
 
-public class SimpleHashSet<E> extends AbstractSet<E> {
+public class SimpleHashSet<E> extends AbstractSet<E> implements Iterable<E> {
 
     private final static int SIZE = 997;
 
     @SuppressWarnings("unchecked")
     private LinkedList<E>[] buckets = new LinkedList[SIZE];
 
-    private int count = 0;
 
     public int size() {
+        int count = 0;
+        for (LinkedList bucket : buckets) {
+            if (bucket == null) {
+                continue;
+            }
+            count += bucket.size();
+        }
         return count;
     }
 
@@ -63,7 +71,6 @@ public class SimpleHashSet<E> extends AbstractSet<E> {
             }
         }
         bucket.add(e);
-        count++;
         return true;
     }
 }
