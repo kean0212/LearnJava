@@ -3,10 +3,17 @@ import java.util.Map;
 public class MapEntry<K, V> implements Map.Entry<K, V> {
     private K key;
     private V value;
+    private MapEntry<K, V> next;
 
     public MapEntry(K key, V value) {
         this.key = key;
         this.value = value;
+    }
+
+    public MapEntry(K key, V value, MapEntry next) {
+        this.key = key;
+        this.value = value;
+        this.next = next;
     }
 
     public K getKey() {
@@ -21,6 +28,20 @@ public class MapEntry<K, V> implements Map.Entry<K, V> {
         V result = this.value;
         this.value = value;
         return result;
+    }
+
+    public MapEntry getNext() {
+        return next;
+    }
+
+    public MapEntry setNext(MapEntry next) {
+        MapEntry result = this.next;
+        this.next = next;
+        return result;
+    }
+
+    public boolean hasNext() {
+        return next != null;
     }
 
     public int hashCode() {

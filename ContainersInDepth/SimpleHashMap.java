@@ -12,13 +12,11 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
     private int numberOfProbes = 0;
 
     @SuppressWarnings("unchecked")
-    private LinkedList<Map.Entry<K, V>>[] buckets = new LinkedList[SIZE];
+    private MapEntry<K, V>[] buckets = new MapEntry[SIZE];
 
     @SuppressWarnings("unchecked")
     public SimpleHashMap(Map<? extends K, ? extends V> map) {
-        for (Map.Entry mapEntry : map.entrySet()) {
-            put((K) mapEntry.getKey(), (V) mapEntry.getValue());
-        }
+        putAll(map);
     }
 
     public int getNumberOfCollisions() {
@@ -32,52 +30,46 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
     public V put(K key, V value) {
         int index = Math.abs(key.hashCode()) % SIZE;
         if (buckets[index] == null) {
-            buckets[index] = new LinkedList<Map.Entry<K, V>>();
-        } else {
-            numberOfCollisions++;
+            buckets[index] = new MapEntry(key, value);
+            return null;
         }
 
-        V oldValue = null;
-        boolean isFound = false;
-        LinkedList<Map.Entry<K, V>> bucket = buckets[index];
-        ListIterator<Map.Entry<K, V>> listIterator = bucket.listIterator();
-        while (listIterator.hasNext()) {
+        numberOfCollisions++;
+        MapEntry bucketHead = buckets[index];
+        do {
             numberOfProbes++;
-            Map.Entry<K, V> entry = listIterator.next();
-            K entryKey = entry.getKey();
-            if (entryKey.equals(key)) {
-                isFound = true;
-                oldValue = entry.getValue();
-                listIterator.set(new MapEntry<K, V>(key, value));
-                break;
+            K headKey = (K) bucketHead.getKey();
+            V headValue = (V) bucketHead.getValue();
+            if (headKey.equals(key)) {
+                bucketHead.setValue(value);
+                return headValue;
             }
-        }
-        if (!isFound) {
-            bucket.add(new MapEntry<K, V>(key, value));
-        }
-        return oldValue;
+            bucketHead = bucketHead.getNext();
+        } while (bucketHead.hasNext());
+
+        bucketHead.setNext(new MapEntry(key, value));
+        return null;
     }
 
     public V get(Object key) {
         int index = Math.abs(key.hashCode()) % SIZE;
-        LinkedList<Map.Entry<K, V>> bucket = buckets[index];
-        if (bucket != null) {
-            for (Map.Entry<K, V> mapEntry : bucket) {
-                if (mapEntry.getKey().equals(key)) {
-                    return mapEntry.getValue();
-                }
+        MapEntry<K, V> bucketHead = buckets[index];
+        while (bucketHead != null) {
+            K headKey = bucketHead.getKey();
+            if (headKey.equals(key)) {
+                return bucketHead.getValue();
             }
+            bucketHead = bucketHead.getNext();
         }
         return null;
     }
 
     public Set<Map.Entry<K, V>> entrySet() {
         Set<Map.Entry<K, V>> entrySet = new HashSet<Map.Entry<K, V>>();
-        for (LinkedList<Map.Entry<K, V>> bucket : buckets) {
-            if (bucket != null) {
-                for (Map.Entry<K, V> mapEntry : bucket) {
-                    entrySet.add(mapEntry);
-                }
+        for (MapEntry<K, V> bucketHead : buckets) {
+            while (bucketHead != null) {
+                entrySet.add(bucketHead);
+                bucketHead = bucketHead.getNext();
             }
         }
         return entrySet;
@@ -91,10 +83,8 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
     }
 
     public void clear() {
-        for (LinkedList<Map.Entry<K, V>> bucket : buckets) {
-            if (bucket != null) {
-                bucket.clear();
-            }
+        for (int i = 0; i < SIZE; ++i) {
+            buckets[i] = null;// is this necessary?
         }
     }
 
@@ -102,17 +92,18 @@ public class SimpleHashMap<K, V> extends AbstractMap<K, V> {
     public V remove(Object key) {
         V oldValue = null;
         int bucketIndex = Math.abs(key.hashCode()) % SIZE;
-        LinkedList<Map.Entry<K, V>> bucket = buckets[bucketIndex];
-        if (bucket != null) {
-            Iterator iterator = bucket.iterator();
-            while (iterator.hasNext()) {
-                Map.Entry<K, V> entry = (Map.Entry<K, V>) iterator.next();
-                if (key != null && key.equals(entry.getKey())) {
-                    oldValue = entry.getValue();
-                    iterator.remove();
-                }
+        MapEntry<K, V> dumbHead = new MapEntry(null, null, buckets[bucketIndex]);
+        MapEntry<K,V> head = dumbHead;
+        MapEntry<K, V> next = null;
+        while ((next = head.getNext()) != null) {
+            K nextKey = next.getKey();
+            if (nextKey.equals(key)) {
+                head.setNext(next.getNext());
+                buckets[bucketIndex] = dumbHead.getNext();
+                return next.getValue();
             }
+            head = next;
         }
-        return oldValue;
+        return null;
     }
 }
