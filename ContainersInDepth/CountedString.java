@@ -24,6 +24,11 @@ public class CountedString {
         return "String: " + string + " id: " + id + " char: " + aChar + " hashCode(): " + hashCode();
     }
 
+    /**
+     * By removing the 'id' combination, the searching still works because of the `equals` method.
+     * All instances of CountedString are stored in the same bucket (collisions), which results in deficiency in searching.
+     * A linear search is applied for searching.
+     */
     public int hashCode() {
         int result = 17;
         result = 37 * result + string.hashCode();
@@ -43,7 +48,7 @@ public class CountedString {
         Map<CountedString, Integer> map = new HashMap<CountedString, Integer>();
         CountedString[] countedStrings = new CountedString[5];
         for (int i = 0; i < countedStrings.length; ++i) {
-            countedStrings[i] = new CountedString("hi", (char) ('a' + i));
+            countedStrings[i] = new CountedString("hi", 'a');
             map.put(countedStrings[i], i);
         }
         Util.println(map);

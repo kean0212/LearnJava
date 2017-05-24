@@ -204,10 +204,10 @@ For example,
     
 3. Another factor needs to consider while overriding `hashCode()` is to ensure an even distribution,
 so that less collisions happen.
-According to ***Effective Java***, use `result = 37* result + c` where `c` is the `hashCode` of each field of the class.
+According to ***Effective Java***, use `result = 37 * result + c` where `c` is the `hashCode` of each field of the class.
 
 **Note**:
 1. The access modifiers are controlling class access, not instance access.
 That's why in 'equals()', private fields can be accessed.
-[CountedString.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/CountedString.java#37).
+[CountedString.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/CountedString.java#L42).
 
