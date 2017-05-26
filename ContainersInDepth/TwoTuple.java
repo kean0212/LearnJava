@@ -1,4 +1,4 @@
-public class TwoTuple<A, B> implements Comparable {
+public class TwoTuple<A extends Comparable, B extends Comparable> implements Comparable {
     public final A first;
     public final B second;
 
@@ -18,13 +18,18 @@ public class TwoTuple<A, B> implements Comparable {
         return result;
     }
 
-    public boolean equals(Object object) {
-        return object instanceof TwoTuple &&
-                (first != null && first.equals(((TwoTuple) object).first)) &&
-                (second != null && second.equals(((TwoTuple) object).second));
+    public boolean equals(Object other) {
+        return other instanceof TwoTuple &&
+                (first != null && first.equals(((TwoTuple) other).first)) &&
+                (second != null && second.equals(((TwoTuple) other).second));
     }
 
-    public int compareTo(TwoTuple other) {
-
+    public int compareTo(Object other) {
+        int resultCompareFirst = first.compareTo(((TwoTuple) other).first);
+        int resultCompareSecond = second.compareTo(((TwoTuple) other).second);
+        if (resultCompareFirst != 0) {
+            return resultCompareFirst;
+        }
+        return resultCompareSecond;
     }
 }

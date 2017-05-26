@@ -211,3 +211,6 @@ According to ***Effective Java***, use `result = 37 * result + c` where `c` is t
 That's why in 'equals()', private fields can be accessed.
 [CountedString.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/CountedString.java#L42).
 
+2. Both `hashCode()` and `compareTo` in 
+[ThreeTuple](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/ThreeTuple.java#L15-L27)
+use the parent's implementation which only takes the first two fields.
