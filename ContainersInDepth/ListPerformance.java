@@ -9,27 +9,27 @@ import java.util.LinkedList;
 public class ListPerformance {
     private static int repeats = 1000;
     private static Random random = new Random(47);
-    private static List<Test<List<Integer>>> tests = new ArrayList<>();
-    private static List<Test<LinkedList<Integer>>> queueTests = new ArrayList<>();
+    private static List<Test<List<String>>> tests = new ArrayList<>();
+    private static List<Test<LinkedList<String>>> queueTests = new ArrayList<>();
 
     static {
         // one way to instantiate an Abstract class
-        tests.add(new Test<List<Integer>>("add") {
+        tests.add(new Test<List<String>>("add") {
             // override 'test'
-            int test(List<Integer> list, TestParam testParam) {
+            int test(List<String> list, TestParam testParam) {
                 int listSize = testParam.size;
                 int loops = testParam.loops;
                 for (int i = 0; i < loops; ++i) {
                     list.clear();
                     for (int j = 0; j < listSize; ++j) {
-                        list.add(j);
+                        list.add("hello");
                     }
                 }
                 return loops * listSize;
             }
         });
-        tests.add(new Test<List<Integer>>("get") {
-            int test(List<Integer> list, TestParam testParam) {
+        tests.add(new Test<List<String>>("get") {
+            int test(List<String> list, TestParam testParam) {
                 int count = testParam.loops * repeats;
                 int listSize = list.size();
                 for (int i = 0; i < count; i++) {
@@ -38,43 +38,43 @@ public class ListPerformance {
                 return count;
             }
         });
-        tests.add(new Test<List<Integer>>("set") {
-            int test(List<Integer> list, TestParam testParam) {
+        tests.add(new Test<List<String>>("set") {
+            int test(List<String> list, TestParam testParam) {
                 int count = testParam.loops * repeats;
                 int listSize = list.size();
                 for (int i = 0; i < count; i++) {
-                    list.set(random.nextInt(listSize), 47);
+                    list.set(random.nextInt(listSize), "hello");
                 }
                 return count;
             }
         });
-        tests.add(new Test<List<Integer>>("iteradd") {
-            int test(List<Integer> list, TestParam testParam) {
+        tests.add(new Test<List<String>>("iteradd") {
+            int test(List<String> list, TestParam testParam) {
                 final int count = 1000000;
                 int middle = list.size() / 2;
-                ListIterator<Integer> it = list.listIterator(middle);
+                ListIterator<String> it = list.listIterator(middle);
                 for (int i = 0; i < count; i++) {
-                    it.add(47);
+                    it.add("hello");
                 }
                 return count;
             }
         });
-        tests.add(new Test<List<Integer>>("insert") {
-            int test(List<Integer> list, TestParam testParam) {
+        tests.add(new Test<List<String>>("insert") {
+            int test(List<String> list, TestParam testParam) {
                 int count = testParam.loops;
                 for (int i = 0; i < count; i++) {
-                    list.add(5, 47); // Minimize random-access cost
+                    list.add(5, "hello"); // Minimize random-access cost
                 }
                 return count;
             }
         });
-        tests.add(new Test<List<Integer>>("remove") {
-            int test(List<Integer> list, TestParam testParam) {
+        tests.add(new Test<List<String>>("remove") {
+            int test(List<String> list, TestParam testParam) {
                 int loops = testParam.loops;
                 int listSize = testParam.size;
                 for (int i = 0; i < loops; i++) {
                     list.clear();
-                    list.addAll(new CountingIntegerList(listSize));
+                    list.addAll(generateStringList(listSize));
                     while (list.size() > 5) {
                         list.remove(5); // Minimize random-access cost
                     }
@@ -82,40 +82,40 @@ public class ListPerformance {
                 return loops * listSize;
             }
         });
-        queueTests.add(new Test<LinkedList<Integer>>("addFirst") {
-            int test(LinkedList<Integer> list, TestParam testParam) {
+        queueTests.add(new Test<LinkedList<String>>("addFirst") {
+            int test(LinkedList<String> list, TestParam testParam) {
                 int loops = testParam.loops;
                 int listSize = testParam.size;
                 for (int i = 0; i < loops; ++i) {
                     list.clear();
                     for (int j = 0; j < listSize; ++j) {
-                        list.addFirst(47);
+                        list.addFirst("hello");
                     }
                 }
                 return loops * listSize;
             }
         });
-        queueTests.add(new Test<LinkedList<Integer>>("addLast") {
-            int test(LinkedList<Integer> list, TestParam testParam) {
+        queueTests.add(new Test<LinkedList<String>>("addLast") {
+            int test(LinkedList<String> list, TestParam testParam) {
                 int loops = testParam.loops;
                 int listSize = testParam.size;
                 for (int i = 0; i < loops; i++) {
                     list.clear();
                     for (int j = 0; j < listSize; j++) {
-                        list.addLast(47);
+                        list.addLast("world");
                     }
                 }
                 return loops * listSize;
             }
         });
         queueTests.add(
-                new Test<LinkedList<Integer>>("removeFirst") {
-                    int test(LinkedList<Integer> list, TestParam testParam) {
+                new Test<LinkedList<String>>("removeFirst") {
+                    int test(LinkedList<String> list, TestParam testParam) {
                         int loops = testParam.loops;
                         int listSize = testParam.size;
                         for (int i = 0; i < loops; i++) {
                             list.clear();
-                            list.addAll(new CountingIntegerList(listSize));
+                            list.addAll(generateStringList(listSize));
                             while (list.size() > 0) {
                                 list.removeFirst();
                             }
@@ -123,13 +123,13 @@ public class ListPerformance {
                         return loops * listSize;
                     }
                 });
-        queueTests.add(new Test<LinkedList<Integer>>("removeLast") {
-            int test(LinkedList<Integer> list, TestParam testParam) {
+        queueTests.add(new Test<LinkedList<String>>("removeLast") {
+            int test(LinkedList<String> list, TestParam testParam) {
                 int loops = testParam.loops;
                 int listSize = testParam.size;
                 for (int i = 0; i < loops; i++) {
                     list.clear();
-                    list.addAll(new CountingIntegerList(listSize));
+                    list.addAll(generateStringList(listSize));
                     while (list.size() > 0) {
                         list.removeLast();
                     }
@@ -139,34 +139,38 @@ public class ListPerformance {
         });
     }
 
-    private static class ListTester extends Tester<List<Integer>> {
-        public ListTester(List<Integer> container, List<Test<List<Integer>>> tests) {
+    private static class ListTester extends Tester<List<String>> {
+        public ListTester(List<String> container, List<Test<List<String>>> tests) {
             super(container, tests);
         }
 
         @Override
-        protected List<Integer> initialize(int size) {
+        protected List<String> initialize(int size) {
             container.clear();
-            container.addAll(new CountingIntegerList(size));
+            container.addAll(generateStringList(size));
             return container;
         }
 
-        public static void run(List<Integer> list, List<Test<List<Integer>>> tests) {
+        public static void run(List<String> list, List<Test<List<String>>> tests) {
             new ListTester(list, tests).timedTest();
         }
+    }
+
+    private static List<String> generateStringList(int size) {
+        return Arrays.asList(Generated.array(String.class, new CountingGenerator.String(), size));
     }
 
     public static void main(String[] args) {
         if (args.length > 0) {
             Tester.defaultTestParams = TestParam.array(args);
         }
-        Tester<List<Integer>> arrayTester = new Tester<List<Integer>>(null, tests.subList(1, 3)) {
+        Tester<List<String>> arrayTester = new Tester<List<String>>(null, tests.subList(1, 3)) {
             // This is an anonymous subclass.
             // It can still override the `initialize()` in Tester
             @Override
-            protected List<Integer> initialize(int size) {
-                Integer[] integers = Generated.array(Integer.class, new CountingGenerator.Integer(), size);
-                return Arrays.asList(integers);
+            protected List<String> initialize(int size) {
+                String[] strings = Generated.array(String.class, new CountingGenerator.String(), size);
+                return Arrays.asList(strings);
             }
         };
         arrayTester.setHeadline("Array as List");
@@ -178,12 +182,12 @@ public class ListPerformance {
         if (args.length > 0) {
             Tester.defaultTestParams = TestParam.array(args);
         }
-        ListTester.run(new ArrayList<Integer>(), tests);
-        ListTester.run(new LinkedList<Integer>(), tests);
-        ListTester.run(new Vector<Integer>(), tests);
+        ListTester.run(new ArrayList<String>(), tests);
+        ListTester.run(new LinkedList<String>(), tests);
+        ListTester.run(new Vector<String>(), tests);
 
         Tester.fieldWidth = 12;
-        Tester<LinkedList<Integer>> queueTester = new Tester<>(new LinkedList<Integer>(), queueTests);
+        Tester<LinkedList<String>> queueTester = new Tester<>(new LinkedList<String>(), queueTests);
         queueTester.setHeadline("Queue tests");
         queueTester.timedTest();
     }
