@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Random;
 import java.util.Vector;
 import java.util.List;
@@ -11,6 +12,7 @@ public class ListPerformance {
     private static Random random = new Random(47);
     private static List<Test<List<String>>> tests = new ArrayList<>();
     private static List<Test<LinkedList<String>>> queueTests = new ArrayList<>();
+    private static List<Test<List<String>>> sortingTests = new ArrayList<>();
 
     static {
         // one way to instantiate an Abstract class
@@ -137,6 +139,18 @@ public class ListPerformance {
                 return loops * listSize;
             }
         });
+        sortingTests.add(new Test<List<String>>("sort") {
+            int test(List<String> list, TestParam testParam) {
+                int loops = testParam.loops;
+                int listSize = testParam.size;
+                for (int i = 0; i < loops; ++i) {
+                    list.clear();
+                    list.addAll(generateStringList(listSize));
+                    Collections.sort(list);
+                }
+                return loops;
+            }
+        });
     }
 
     private static class ListTester extends Tester<List<String>> {
@@ -190,5 +204,8 @@ public class ListPerformance {
         Tester<LinkedList<String>> queueTester = new Tester<>(new LinkedList<String>(), queueTests);
         queueTester.setHeadline("Queue tests");
         queueTester.timedTest();
+
+        ListTester.run(new ArrayList<String>(), sortingTests);
+        ListTester.run(new LinkedList<String>(), sortingTests);
     }
 }
