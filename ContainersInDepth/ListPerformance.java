@@ -13,6 +13,7 @@ public class ListPerformance {
     private static List<Test<List<String>>> tests = new ArrayList<>();
     private static List<Test<LinkedList<String>>> queueTests = new ArrayList<>();
     private static List<Test<List<String>>> sortingTests = new ArrayList<>();
+    private static List<Test<StringArrayContainer>> stringArrayContainerTests = new ArrayList<>();
 
     static {
         // one way to instantiate an Abstract class
@@ -22,7 +23,7 @@ public class ListPerformance {
                 int listSize = testParam.size;
                 int loops = testParam.loops;
                 for (int i = 0; i < loops; ++i) {
-                    list.clear();
+//                    list.clear();
                     for (int j = 0; j < listSize; ++j) {
                         list.add("hello");
                     }
@@ -151,6 +152,28 @@ public class ListPerformance {
                 return loops;
             }
         });
+        stringArrayContainerTests.add(new Test<StringArrayContainer>("add") {
+            int test(StringArrayContainer container, TestParam testParam) {
+                int loops = testParam.loops;
+                int size = testParam.size;
+                for (int i = 0; i < loops; ++i) {
+                    for (int j = 0; j < size; ++j) {
+                        container.add("hello");
+                    }
+                }
+                return loops * size;
+            }
+        });
+        stringArrayContainerTests.add(new Test<StringArrayContainer>("get") {
+            int test(StringArrayContainer container, TestParam testParam) {
+                int count = testParam.loops * repeats;
+                int containerSize = container.size();
+                for (int i = 0; i < count; i++) {
+                    container.get(random.nextInt(containerSize));
+                }
+                return count;
+            }
+        });
     }
 
     private static class ListTester extends Tester<List<String>> {
@@ -207,5 +230,8 @@ public class ListPerformance {
 
         ListTester.run(new ArrayList<String>(), sortingTests);
         ListTester.run(new LinkedList<String>(), sortingTests);
+
+        ListTester.run(new StringArrayContainer(), stringArrayContainerTests);
+        ListTester.run(new ArrayList<String>(), tests.subList(0, 2));
     }
 }
