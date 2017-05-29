@@ -214,3 +214,23 @@ That's why in 'equals()', private fields can be accessed.
 2. Both `hashCode()` and `compareTo` in 
 [ThreeTuple](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/ThreeTuple.java#L15-L27)
 use the parent's implementation which only takes the first two fields.
+
+### Choosing between Lists
+The best approach is to choose `ArrayList` as your default and to change to a `LinkedList` 
+if you need its extra functionality or you discover performance problems due to many insertions and removals 
+from the middle of the list. 
+If you are working with a fixed-size group of elements, either use a `List` backed by an array(such as `Arrays.asList()`),
+or if necessary, an actual array.
+
+1. For a `List` backed by an array and for an `ArrayList`, 'get' and 'set' are fast and consistent regardless of the 
+list size, whereas for a `LinkedList`, the access times grow significantly for larger lists.
+
+2. For `ArrayList`, 'insertion' gets expensive as the list gets larger,
+but for a `LinkedList`, it is relatively cheap, and constant regardless of size,
+because an `ArrayList` must create space and copy all its references forward during an insertion.
+
+3. For `Queue` which is backed by `LinkedList`, 'insert' and 'remove' elements from the endpoints of the list are optimal.
+
+**Note**:
+1. We can instantiate an abstract class by implementing the abstract method in an anonymous class, like 
+[ListPerformance.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/ListPerformance.java#L22).
