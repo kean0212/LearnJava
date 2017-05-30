@@ -241,3 +241,7 @@ because an `ArrayList` must create space and copy all its references forward dur
 2. `TreeSet` is used for sorted set.
 
 3. `LinkedHashSet` is for maintaining inserted order.
+
+## Chossing between Maps
+When you are using a `Map`, your first choice should be `HashMap`, 
+and only if you need a constantly sorted `Map` will you need `TreeMap`.
