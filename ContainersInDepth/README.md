@@ -234,3 +234,10 @@ because an `ArrayList` must create space and copy all its references forward dur
 **Note**:
 1. We can instantiate an abstract class by implementing the abstract method in an anonymous class, like 
 [ListPerformance.java](https://github.com/kean0212/Thinking-In-Java-Notes/blob/master/ContainersInDepth/ListPerformance.java#L22).
+
+### Choosing between Sets
+1. `HashSet` is used for 'insertion' and 'searching'.
+
+2. `TreeSet` is used for sorted set.
+
+3. `LinkedHashSet` is for maintaining inserted order.
