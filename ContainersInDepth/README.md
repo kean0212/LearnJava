@@ -246,5 +246,9 @@ because an `ArrayList` must create space and copy all its references forward dur
 When you are using a `Map`, your first choice should be `HashMap`, 
 and only if you need a constantly sorted `Map` will you need `TreeMap`.
 
+The performance of `HashMap` can be tuned through **load factor**(`loadFactor = size / capacity`). 
+The lighter it is, the lower chance of collision. 
+Therefore, this improves the efficiency of lookups and insertions, but sacrifice iteration and space.
+As all other problems, there is a tradeoff between efficiency and space.
 **Note**:
 1. `? super Comparable` vs `? extends Comparable`.
