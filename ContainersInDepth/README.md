@@ -245,3 +245,6 @@ because an `ArrayList` must create space and copy all its references forward dur
 ## Chossing between Maps
 When you are using a `Map`, your first choice should be `HashMap`, 
 and only if you need a constantly sorted `Map` will you need `TreeMap`.
+
+**Note**:
+1. `? super Comparable` vs `? extends Comparable`.

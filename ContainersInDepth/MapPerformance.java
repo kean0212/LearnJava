@@ -62,6 +62,6 @@ public class MapPerformance {
         Tester.run(new IdentityHashMap<Integer, Integer>(), tests);
         Tester.run(new WeakHashMap<Integer, Integer>(), tests);
         Tester.run(new Hashtable<Integer, Integer>(), tests);
-        Tester.run(new SlowMap<Integer, Integer>(), tests);
+        Tester.run(new SlowMap36<Integer, Integer>(), tests);
     }
 }

@@ -1,6 +1,6 @@
 import java.util.Map;
 
-public class MapEntry<K, V> implements Map.Entry<K, V> {
+public class MapEntry<K extends Comparable, V> implements Map.Entry<K, V>, Comparable<MapEntry<K, V>> {
     private K key;
     private V value;
     private MapEntry<K, V> next;
@@ -58,5 +58,9 @@ public class MapEntry<K, V> implements Map.Entry<K, V> {
 
     public String toString() {
         return key + "=" + value;
+    }
+
+    public int compareTo(MapEntry<K, V> other) {
+        return key.compareTo(other.key);
     }
 }
