@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 
 class Custom implements Comparable<Custom> {
     public final String first;
@@ -23,7 +24,31 @@ class Custom implements Comparable<Custom> {
 public class CustomizedClassSortAndBinarySearch {
 
     public static void main(String[] args) {
+        sortAndBinarySearchWithComparator();
+        Util.println("=====================");
         sortAndBinarySearch();
+    }
+
+    private static void sortAndBinarySearchWithComparator() {
+        Comparator<Custom> comparator = new Comparator<Custom>() {
+            public int compare(Custom customOne, Custom customTwo) {
+                return customOne.second.compareTo(customTwo.second);
+            }
+        };
+        Custom[] customArray = createArray(10, 5);
+        Custom customToBeSearched = customArray[2];
+        Util.println("customArray: " + toString(customArray));
+        Arrays.sort(customArray, comparator);
+        Util.println("Arrays.sort(customArray, comparator): " + toString(customArray));
+        Util.println("Arrays.binarySearch(customArray, " + customToBeSearched + ", comparator): " + Arrays.binarySearch(customArray, customToBeSearched, comparator));
+
+        ArrayList<Custom> customArrayList = createArrayList(12, 6);
+        customToBeSearched = customArrayList.get(2);
+        Util.println("customArrayList: " + customArrayList);
+        Collections.sort(customArrayList, comparator);
+        Util.println("Collections.sort(customArrayList, comparator): " + customArrayList);
+        Util.println("Collections.binarySearch(customArrayList, " + customToBeSearched + ", comparator): " + Collections.binarySearch(customArrayList, customToBeSearched, comparator));
+
     }
 
     private static void sortAndBinarySearch() {

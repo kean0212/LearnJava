@@ -259,6 +259,10 @@ As all other problems, there is a tradeoff between efficiency and space.
     // These methods **ONLY** apply to List
     Collections.sort(list);
     Collections.binarySearch(list, object);
+ 
+    // The comparator used in sorting and searching should be **SAME**
+    Collections.sort(list, comparator);
+    Collections.binarySearch(list, object, comparator);
     ```
 
 **Note:**
