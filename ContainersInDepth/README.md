@@ -250,5 +250,17 @@ The performance of `HashMap` can be tuned through **load factor**(`loadFactor = 
 The lighter it is, the lower chance of collision. 
 Therefore, this improves the efficiency of lookups and insertions, but sacrifice iteration and space.
 As all other problems, there is a tradeoff between efficiency and space.
-**Note**:
+**Note:**
 1. `? super Comparable` vs `? extends Comparable`.
+
+## Sorting and Searching Lists
+1. Similar to `Arrays.sort()` and `Arrays.binarySearch()`:
+    ```java
+    // These methods **ONLY** apply to List
+    Collections.sort(list);
+    Collections.binarySearch(list, object);
+    ```
+
+**Note:**
+1. The default `toString()` method of Array doesn't call the `toString()` on each of its elements.
+Therefore, we need to explicitly define the function.
