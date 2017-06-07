@@ -253,6 +253,27 @@ As all other problems, there is a tradeoff between efficiency and space.
 **Note:**
 1. `? super Comparable` vs `? extends Comparable`.
 
+## Utilities
+Some useful methods in `java.util.Collections`:
+```java
+// Using the natural comparison method of objects
+Collections.max(collection);
+Collections.min(collection);
+Collections.indexOfSubList(List source, List target);
+Collections.lastIndexOfSubList(List source, List target);
+Collections.replaceAll(List<T>, T oldValue, T newValue);
+Collections.reverse(list);
+Collections.rotate(list, int distance);
+Collections.sort(List<T> list);
+Collections.sort(List<T> list, Comparator<? super T> comparator);
+// Create an immutable List<T>
+Collections.nCopies(int n, T x); 
+// Returns true if the two collections have no elements in common
+Collections.disjoint(Collection, Collection); 
+// Returns the number of elements
+Collections.frequencey(collection, Object x);
+```
+
 ## Sorting and Searching Lists
 1. Similar to `Arrays.sort()` and `Arrays.binarySearch()`:
     ```java

@@ -15,7 +15,7 @@ class Custom implements Comparable<Custom> {
     }
 
     public int compareTo(Custom other) {
-        return first.compareTo(other.first);
+        return (first + second).compareTo(other.first + other.second);
     }
 
     public String toString() {
