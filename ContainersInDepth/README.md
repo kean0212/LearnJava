@@ -289,3 +289,14 @@ Collections.frequencey(collection, Object x);
 **Note:**
 1. The default `toString()` method of Array doesn't call the `toString()` on each of its elements.
 Therefore, we need to explicitly define the function.
+
+## Making a Collection or Map unmodifiable
+Methods in `java.util.Collections`:
+```java
+static <T> Collection<T> unmodifiableCollection(Collection<? extends T> c);
+static <T> List<T> unmodifiableList(List<? extends T> l);
+static <T> Set<T> unmodifiableSet(Set<? extends T> s);
+static <T> Map<K,V> unmodifiableMap(Map<? extends K, ? extends V> m);
+static <T> SortedMap<K,V> unmodifiableSortedMap(SortedMap<K, ? extends V> m);
+static <T> SortedSet<T> unmodifiableSortedSet(SortedSet<T> s);
+```
