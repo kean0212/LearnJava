@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashSet;
+import java.util.HashMap;
 
 class Custom implements Comparable<Custom> {
     public final String first;
@@ -19,14 +21,38 @@ class Custom implements Comparable<Custom> {
     public String toString() {
         return "{" + first + ", " + second + "}";
     }
+
+    public boolean equals(Object other) {
+        if (other instanceof Custom) {
+            return first == ((Custom) other).first && second == ((Custom) other).second;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        int result = 17;
+        result = 37 * result + first.hashCode();
+        result = 37 * result + second.hashCode();
+        return result;
+    }
 }
 
 public class CustomizedClassSortAndBinarySearch {
 
     public static void main(String[] args) {
+        Util.println("=====================");
         sortAndBinarySearchWithComparator();
+
         Util.println("=====================");
         sortAndBinarySearch();
+
+        Util.println("=====================");
+        HashSet<Custom> customHashSet = createHashSet(13, 1);
+        Util.println("customHashSet: " + customHashSet);
+
+        Util.println("=====================");
+        HashMap<Custom, Integer> customIntegerHashMap = createHashMap(13, 1);
+        Util.println("customHashMap: " + customIntegerHashMap);
     }
 
     private static void sortAndBinarySearchWithComparator() {
@@ -65,6 +91,24 @@ public class CustomizedClassSortAndBinarySearch {
         Collections.sort(customArrayList);
         Util.println("Collections.sort(customArrayList): " + customArrayList);
         Util.println("Collections.binarySearch(customArrayList, " + customToBeSearched + "): " + Collections.binarySearch(customArrayList, customToBeSearched));
+    }
+
+    private static HashSet<Custom> createHashSet(int size, int length) {
+        RandomGenerator.String stringGenerator = new RandomGenerator.String(length);
+        HashSet<Custom> customHashSet = new HashSet<>();
+        for (int i = 0; i < size; ++i) {
+            customHashSet.add(new Custom(stringGenerator.next(), stringGenerator.next()));
+        }
+        return customHashSet;
+    }
+
+    private static HashMap<Custom, Integer> createHashMap(int size, int length) {
+        RandomGenerator.String stringGenerator = new RandomGenerator.String(length);
+        HashMap<Custom, Integer> customHashMap = new HashMap<>();
+        for (int i = 0; i < size; ++i) {
+            customHashMap.put(new Custom(stringGenerator.next(), stringGenerator.next()), i);
+        }
+        return customHashMap;
     }
 
     private static Custom[] createArray(int size, int length) {
